@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="875.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.BatallaController">
+   <children>
+      <ImageView fx:id="FondoBatalla" fitHeight="875.0" fitWidth="1550.0">
+         <image>
+            <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/FondoBatalla.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="496.0" fitWidth="688.0" layoutX="87.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/Charizard.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="217.0" fitWidth="182.0" layoutX="1203.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/Lucario.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagenFuego" fitHeight="51.0" fitWidth="234.0" layoutX="869.0" layoutY="679.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/botonFuego.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="botonLlamarada" layoutX="867.0" layoutY="681.0" mnemonicParsing="false" onAction="#atacarConLlamarada" prefHeight="46.0" prefWidth="234.0" style="-fx-background-color: Transparent;" text="            LLAMARADA" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imagenFuego1" fitHeight="66.0" fitWidth="234.0" layoutX="1110.0" layoutY="746.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/botonFuego.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="botonLanzallamas" layoutX="1110.0" layoutY="748.0" mnemonicParsing="false" onAction="#atacarConLanzallamas" prefHeight="46.0" prefWidth="234.0" style="-fx-background-color: Transparent;" text="          LANZALLAMAS" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imagenDragon" fitHeight="66.0" fitWidth="234.0" layoutX="1110.0" layoutY="678.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/botonDragon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="botonDragon" layoutX="1120.0" layoutY="681.0" mnemonicParsing="false" onAction="#atacarConGarraDragon" prefHeight="46.0" prefWidth="234.0" style="-fx-background-color: Transparent;" text="      GARRA DRAGON" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imagenVolador" fitHeight="66.0" fitWidth="234.0" layoutX="868.0" layoutY="746.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/botonVolador.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="botonAcrobata" layoutX="868.0" layoutY="748.0" mnemonicParsing="false" onAction="#atacarConAcrobata" prefHeight="46.0" prefWidth="234.0" style="-fx-background-color: Transparent;" text="            ACROBATA" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="131.0" fitWidth="578.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/BarraCharizard.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="barraCharizard" layoutX="16.0" layoutY="541.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="287.0" progress="1.0" />
+      <Label fx:id="vidaCharizard" layoutX="268.0" layoutY="561.0" text="250" />
+      <ImageView fitHeight="114.0" fitWidth="341.0" layoutX="1227.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/barraLucario.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="barraLucario" layoutX="1280.0" layoutY="292.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="248.0" progress="1.0" />
+      <Label fx:id="vidaLucario" layoutX="1255.0" layoutY="293.0" text="250" />
+      <Label fx:id="labelTurno" layoutX="700" layoutY="200" text="Turno de Charizard" textFill="WHITE" />
+      <Button fx:id="guardarPartida" layoutY="-1.0" mnemonicParsing="false" onAction="#guardarPartida" prefHeight="40.0" prefWidth="110.0" text="Guardar Partida" />
+   </children>
+</AnchorPane>

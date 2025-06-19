@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.MenuController">
+
+    <children>
+        <!-- Imagen de fondo -->
+        <ImageView fitHeight="875.0" fitWidth="1550.0">
+            <image>
+                <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/FondoMenu.png" />
+            </image>
+        </ImageView>
+
+        <!-- Aura -->
+        <ImageView fitHeight="290.0" fitWidth="300.0" layoutX="210.0" layoutY="225.0">
+            <image>
+                <Image url="file:/C:/Users/Usuario/eclipse-workspace/PokemonEclipse/src/application/resources/Vista/img/Aura.png" />
+            </image>
+        </ImageView>
+
+        <!-- Texto principal -->
+        <TextField layoutX="628.0" layoutY="112.0" prefHeight="91.0" prefWidth="514.0" style="-fx-background-color: Transparent;" text="POKÉMON ECLIPSE">
+            <font>
+                <Font name="BN Jinx" size="50.0" />
+            </font>
+        </TextField>
+
+        <!-- Botón iniciar -->
+        <Button fx:id="iniciarPartidaNueva" layoutX="220.0" layoutY="659.0" onAction="#cambiarAEscenaJuego" prefHeight="70.0" prefWidth="1094.0" style="-fx-background-color: Transparent;" text="Iniciar Partida Nueva">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Button>
+
+        <!-- Botón cargar partida -->
+        <Button fx:id="cargarPartida" layoutX="220.0" layoutY="761.0" onAction="#cargarPartida" prefHeight="70.0" prefWidth="1094.0" style="-fx-background-color: Transparent;" text="Cargar Partida">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

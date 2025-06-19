@@ -1,0 +1,33 @@
+.root {
+    -fx-background-image: url("vistaImg/img/FondoMenu.png");
+    -fx-background-size: cover;       /* Cubre toda la pantalla */
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+.buttonA { 
+   -fx-background-color: #FBFCFC; 
+   -fx-text-fill: #979A9A; 
+   -fx-border-color: gray;
+}
+.buttonA:hover { 
+   -fx-background-color: #D4E6F1; 
+   -fx-text-fill: #3D98F3; 
+}
+.buttonA:pressed {    
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+.buttonB { 
+   -fx-background-color: #D4E6F1; 
+   -fx-text-fill: #3D98F3;
+   -fx-border-color: gray; 
+}
+.buttonB:hover { 
+   -fx-background-color: #FBFCFC; 
+   -fx-text-fill: #979A9A; 
+}
+.buttonB:pressed {
+    -fx-background-color: gray;
+    -fx-text-fill: white;    
+}/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
